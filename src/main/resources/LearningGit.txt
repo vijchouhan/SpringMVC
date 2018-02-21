@@ -1,0 +1,147 @@
+Date 21 Feb 2018, 
+GIT Learinig :- This is my first git basic learning
+*******************************************************************************************************************
+Repository:-
+
+https://github.com/vijchouhan/MyApplication.git
+
+https://github.com/vijchouhan/LocalRepo.git
+
+*******************************************************************************************************************
+Below are the steps to push project into Git 
+================
+step 1:- create repositoty on git after registered with it...
+
+step 2:- create local folder as  D:/SelfLearning/MyRepo/MyApplication and copy your project 'MySpringCoreApp' inside this 
+
+step 3:- open git bash console here and see status type command:- git status , you will see copied project here  
+
+step 4:- now add entire project into git repository command :- git add .
+
+step 5:- now commit the project into your repository command:- git commit -m "your commit message"
+
+step 6:- now push your project into respository command:- $ git push origin master
+
+Now your project commited to repository you can see while openin git on brower.... below are the logs from git console........
+
+-------------------------
+
+VI297398@D-113094685 MINGW64 /d/SelfLearning/MyRepo/MyApplication (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        MySpringCoreApp/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+VI297398@D-113094685 MINGW64 /d/SelfLearning/MyRepo/MyApplication (master)
+$ git add .
+
+VI297398@D-113094685 MINGW64 /d/SelfLearning/MyRepo/MyApplication (master)
+$ git commit -m "Test my app"
+[master 8064a11] Test my app
+ Committer: = <VI297398@wipro.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 8 files changed, 134 insertions(+)
+ create mode 100644 MySpringCoreApp/.classpath
+ create mode 100644 MySpringCoreApp/.project
+ create mode 100644 MySpringCoreApp/bin/Beans.xml
+ create mode 100644 MySpringCoreApp/bin/com/tutorialspoint/HelloWorld.class
+ create mode 100644 MySpringCoreApp/bin/com/tutorialspoint/MainApp.class
+ create mode 100644 MySpringCoreApp/src/Beans.xml
+ create mode 100644 MySpringCoreApp/src/com/tutorialspoint/HelloWorld.java
+ create mode 100644 MySpringCoreApp/src/com/tutorialspoint/MainApp.java
+
+VI297398@D-113094685 MINGW64 /d/SelfLearning/MyRepo/MyApplication (master)
+$ git push origin master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': vijchouhan
+Counting objects: 16, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (16/16), 3.18 KiB | 0 bytes/s, done.
+Total 16 (delta 0), reused 0 (delta 0)
+To https://github.com/vijchouhan/MyApplication.git
+   31b1763..8064a11  master -> master
+
+VI297398@D-113094685 MINGW64 /d/SelfLearning/MyRepo/MyApplication (master)
+$
+
+*******************************************************************************************************************
+How to add new file:- 
+
+create file in your local working copy in any location and then add this file to remote repository ad folling command
+
+1. open gitbash console and first go to the directory where file created...
+
+2. git add 'file name'
+
+3. git commit -m "your commit message"
+
+4. git push origin master 
+
+5. it's done you can see your file on repository......... 
+
+6. below are the console log for the same activity you done on above steps 1 to 4.... 
+
+-----------------
+VI297398@D-113094685 MINGW64 /d/SelfLearning/MyRepo/MyApplication/MySpringCoreApp/src/com/tutorialspoint (master)
+$ git add LearningGit.txt
+
+VI297398@D-113094685 MINGW64 /d/SelfLearning/MyRepo/MyApplication/MySpringCoreApp/src/com/tutorialspoint (master)
+$ git commit -m "added new txt file as note on git"
+[master 9855007] added new txt file as note on git
+ Committer: = <VI297398@wipro.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 82 insertions(+)
+ create mode 100644 MySpringCoreApp/src/com/tutorialspoint/LearningGit.txt
+
+VI297398@D-113094685 MINGW64 /d/SelfLearning/MyRepo/MyApplication/MySpringCoreApp/src/com/tutorialspoint (master)
+$ git push origin master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': vijchouhan
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.78 KiB | 0 bytes/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vijchouhan/MyApplication.git
+   8064a11..9855007  master -> master
+
+VI297398@D-113094685 MINGW64 /d/SelfLearning/MyRepo/MyApplication/MySpringCoreApp/src/com/tutorialspoint (master)
+$ ls
+HelloWorld.java  LearningGit.txt  MainApp.java
+
+VI297398@D-113094685 MINGW64 /d/SelfLearning/MyRepo/MyApplication/MySpringCoreApp/src/com/tutorialspoint (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+VI297398@D-113094685 MINGW64 /d/SelfLearning/MyRepo/MyApplication/MySpringCoreApp/src/com/tutorialspoint (master)
