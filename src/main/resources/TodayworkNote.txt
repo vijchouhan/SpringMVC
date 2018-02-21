@@ -1,0 +1,147 @@
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE
+$ git clone httpsgithub.comvijchouhanMySpringCoreApp.git
+fatal: repository 'httpsgithub.comvijchouhanMySpringCoreApp.git' does not exist
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE
+$ git clone https://github.com/vijchouhan/MySpringCoreApp.git
+Cloning into 'MySpringCoreApp'...
+warning: You appear to have cloned an empty repository.
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE
+$ git clone https://github.com/vijchouhan/SpringMVC.git
+Cloning into 'SpringMVC'...
+warning: You appear to have cloned an empty repository.
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE
+$ cls
+bash: cls: command not found
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE
+$ ls
+MySpringCoreApp/  RemoteSystemsTempFiles/  SpringMVC/
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE
+$ cd MySpringCoreApp/
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/MySpringCoreApp (master)
+$ touch .gitignore
+
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/MySpringCoreApp (master)
+$
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/MySpringCoreApp (master)
+$ ls
+bin/  src/
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/MySpringCoreApp (master)
+$ cd ..
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE
+$ cd SpringMVC/
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/SpringMVC (master)
+$ touch .gitignore
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/SpringMVC (master)
+$ ls
+pom.xml  src/  target/
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/SpringMVC (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/SpringMVC (master)
+$ cd..
+bash: cd..: command not found
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/SpringMVC (master)
+$ cd ..
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE
+$ ls
+MySpringCoreApp/  RemoteSystemsTempFiles/  SpringMVC/
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE
+$ cd MySpringCoreApp/
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/MySpringCoreApp (master)
+$ ls
+bin/  src/
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/MySpringCoreApp (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+        modified:   src/com/tutorialspoint/HelloWorld.java
+        modified:   src/com/tutorialspoint/MainApp.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/MySpringCoreApp (master)
+$ cd ..
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE
+$ cd SpringMVC/
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/SpringMVC (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/SpringMVC (master)
+$ git commit -m "update gitignore file"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+        modified:   .gitignore
+
+no changes added to commit
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/SpringMVC (master)
+$ git add .gitignore
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/SpringMVC (master)
+$ git commit -m "add gitignore file"
+[master b21de4d] add gitignore file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/SpringMVC (master)
+$ git push origin master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': vijchouhan
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 390 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/vijchouhan/SpringMVC.git
+   73c11cd..b21de4d  master -> master
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/SpringMVC (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/SpringMVC (master)
+$ ls
+pom.xml  src/  target/
+
+VI297398@D-113094685 MINGW64 /d/MyApplication/WORKSPACE/SpringMVC (master)
